@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ba08ca;
+    margin:90px;
+    margin-top: 200px;
+}
+.test{
+    max-width: 400px;
+    margin: auto;
+    background-color: #ece4e4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgb(44, 33, 22);
+    
+}
+h1{
+    text-align: center;
+    color:#333;
+}
+form{
+    text-align: center;
+    color:#333;
+}
+label{
+    margin-left: -20px;
+
+}
+button{
+    background-color: #333;
+    color: #ffff;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+button:hover{
+    background-color: rgb(17, 228, 24);
+    color: #1c1b1b;
+}
+    </style>
+</head>
+<body  >
+    <div class="test">
+    <h1>Simple Calculator</h1>
+    <form action="/calculate" method="POST">
+        <label >Number 1</label>
+        <input type="number" name="num1" placeholder="First Number" required><br><br>
+        <label >Number 2</label>
+        <input type="number" name="num2" placeholder="Second Number" required><br><br>
+        <select name="operation" required><br>
+            <option value="select">Select</option>
+            <option value="addition">Addition</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiple">Multiply</option>
+            <option value="divided">Divided</option>
+        </select>&nbsp;&nbsp;&nbsp;
+        <button type="submit">Calculate</button>
+    </form>
+</div>
+</body>
+</html>
